@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Swag</title>
+    <link rel="stylesheet" type="text/css" href="ribbon.css">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        background-image: url("Hexagones4.png"), linear-gradient(to bottom, #475468, #2b3647, black);
+        background-repeat: repeat;
+        background-blend-mode: overlay;
+      }
+      #page {
+        max-width: 1024px;
+        margin: auto;
+        height: 100%;
+      }
+      .content {
+        background-color: white;
+        max-width: 480px;
+        margin: auto;
+        margin-top: 10px;
+        border: black 1px solid;
+        border-radius: 2%;
+        padding: 5px 10px;
+      }
+      .content>p {
+        padding: 0;
+        margin: 5px;
+      }
+      iframe {
+        width: 100%;
+      }
+      #content {
+        max-width: 1024px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        align-content: space-around;
+        justify-content: space-between;
+      }
+      .div-header {
+        width: 100%;
+        height: 65px;
+        text-align: center;
+      }
+      .article {
+        width: 480px;
+      }
+      #menu {
+        -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+        padding: 0;
+        margin:-25px;
+        background: linear-gradient(to bottom, #857a84, #5e6269);
+        font-size: 24px;
+        width: 100%;
+      }
+      .inter-menu::before {
+        content: '-';
+        padding-right: 10px; 
+      }
+      .options {
+        width: 500px;
+        margin: auto;
+      }
+      .menu-list {
+        list-style-type: none;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+      }
+      .menu-list>li {
+        font-size: 23px;
+        font-weight: 500;
+        float: none;
+        display: inline-block;
+        margin: 10px 5px;
+      }
+      .selected {
+        text-shadow: 0 0 5px orange;
+      }
+      .links {
+        list-style-type: circle;
+      }
+      .links a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="menu">
+        <div class="options">
+            <ol class="menu-list">
+              <li class="selected"><a>Accueil</a></li>
+              <li class="inter-menu"><a>Activités</a></li>
+              <li class="inter-menu"><a>Professeurs</a></li>
+              <li class="inter-menu"><a>Cours</a></li>
+            </ol>
+        </div>
+      </div>
+
+      <div id="content">
+        <div class="article" id="news">
+            <div class="div-header">
+              <h1 class="ribbon">
+                <strong class="ribbon-content">Nouvelles du département</strong>
+              </h1>
+            </div>
+            <div class="content">
+                <p>Cette année encore, nos étudiants finissants se sont trouvé un stage en entreprise. Nos quelques finissants vont faire un stage de 10 semaindes dans les entreprises suivantes: Leclerc Assurances, N-Média, Siga, SMD, etc.</p>
+                <p>Durant cette période, ils participeront à l'analyse, la conception, et la programmation de projets informatisés propre à chacune des entreprises hôtes.</p>
+                <p>Ils auront l'occasion de vivre une expérience professionnelle enrichissant sur un plan individuel et social tout en ayant la chance d'acquérir des connaissances s'ajoutant à celles qu'ils ont déjà acquises lors de leur DEC en informatique</p>
+                <p>Un des buts du stage est de permette à l'étudiant de compléter sa formation en observant des professionnels du milieu adin de distinguer les intervenants, leurs rôles, leurs responsabilités et de cerner le niveau de communication à adopter avec ses pairs.</p>
+            </div>
+        </div>
+
+        <div class="article" id="video">
+            <div class="div-header">
+              <h1 class="ribbon">
+                <strong class="ribbon-content">Vidéo de présentation</strong>
+              </h1>
+            </div>
+            <div class="content">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Kj3wWKjMSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="article" id="links">
+          <div class="div-header">
+              <h1 class="ribbon">
+                <strong class="ribbon-content">Liens Externes</strong>
+              </h1>
+          </div>
+          <div class="content">
+              <ol class="links">
+                <li><a href="google.com">Portail Omnivox</a></li>
+                <li><a href="google.com">Octas</a></li>
+                <li><a href="google.com">Réseaux Action TI</a></li>
+              </ol>
+          </div>
+        </div>
+          
+      </div>
+    </div>
+  </body>
+</html>
